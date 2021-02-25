@@ -1072,6 +1072,13 @@
         }
     });
 
+    $(".header-jizt").on("click", function() {
+        $(".l-section, .section, .section--is-active").removeClass("section--is-active");
+        $(".l-section.section:first-child").addClass("section--is-active");
+        $(".side-nav").children(".is-active").removeClass("is-active");
+        $(".side-nav li:first-child").addClass("is-active");
+    });
+
     var l = document.getElementById("viewport"),
         c = new Hammer(l);
     c.get("swipe").set({
