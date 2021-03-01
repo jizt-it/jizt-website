@@ -394,6 +394,7 @@ body{
     color:#fff;
     font-size:14px;
     opacity:0.6;
+    font-size: 1rem;
 }
 
 .side-nav>li span::after{
@@ -706,6 +707,7 @@ body{
     left:0
 }
 
+.about,
 .contribute{
     position: relative;
     top:0;
@@ -717,6 +719,8 @@ body{
     background-size:cover;
     background-repeat:no-repeat
 }
+
+.about--lockup,
 .contribute--lockup {
     position:relative;
     display:-webkit-box;
@@ -734,6 +738,7 @@ body{
     background: no-repeat bottom/100% url("../img/footer-bg.png");
 }
 
+.about--lockup .about-container,
 .contribute--lockup .contribute-container {
     height: 100%;
     width: 75%;
@@ -744,6 +749,7 @@ body{
     text-align: justify;
 }
 
+.about--lockup .about-container h2,
 .contribute--lockup .contribute-container h2 {
     margin: -5% 0 5% 0;
     font-size: 2.5rem;
@@ -751,10 +757,16 @@ body{
     text-align: center;
 }
 
+.about--lockup .about-container p,
 .contribute--lockup .contribute-container p {
     width: 80%;
     font-size: 1.15rem;
     font-weight: 300;
+}
+
+.about--lockup .about-container a {
+    color: white;
+    text-decoration: underline;
 }
 
 .contribute--lockup .contribute-container p:first-of-type {
@@ -793,7 +805,7 @@ body{
     font-size: 1rem;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1100px){
     .l-side-nav {
         display: none;
     }
@@ -817,7 +829,14 @@ body{
         margin: 0 10%;
     }
 
+    .about--lockup,
     .contribute--lockup {
+        margin: 0 auto;
+        max-width: none;
+    }
+
+    .about--lockup .about-container,
+    .contribute--lockup .contribute-container {
         margin: 0 auto;
     }
 }
@@ -885,11 +904,13 @@ body{
         height: 60%;
     }
 
+    .about--lockup,
     .contribute--lockup {
         max-width: 100%;
         margin: 0;
     }
 
+    .about--lockup .about-container,
     .contribute--lockup .contribute-container {
         width: 100%;
     }
@@ -898,10 +919,12 @@ body{
         width: 60%;
     }
 
+    .about--lockup .about-container h2,
     .contribute--lockup .contribute-container h2 {
         font-size: 1.5rem;
     }
 
+    .about--lockup .about-container p,
     .contribute--lockup .contribute-container p {
         font-size: 1rem;
     }
@@ -927,24 +950,29 @@ body{
         margin-top: -10%;
     }
 
+    .screenshot--lockup {
+        height: 60%;
+    }
+
+    .about--lockup,
     .contribute--lockup {
         max-width: 100%;
     }
+
+    .about--lockup .about-container,
     .contribute--lockup .contribute-container {
         width: 100%;
         margin: 0;
     }
 
-    .screenshot--lockup {
-        height: 60%;
-    }
-
+    .about--lockup .about-container h2,
     .contribute--lockup .contribute-container h2{
         margin: 0;
         font-size: 1.5rem;
         font-weight: 600;
     }
 
+    .about--lockup .about-container p,
     .contribute--lockup .contribute-container p {
         width: 90%;
         margin: 1% 0;
@@ -974,6 +1002,7 @@ body{
 }
 
 @media (max-width: 400px) and (max-height: 620px){
+    .contribute--lockup .contribute-container p,
     .contribute--lockup .contribute-container p {
         width: 90%;
         margin: 1% 0;
